@@ -1,9 +1,8 @@
 export class Proofread {
     static id = "U5JQR4MRtzrP";
-
+    static description = "Suggests an improved version of the text";
     constructor() {
-        this.name = "Proofread";
-        this.description = "Suggests an improved version of the text";
+
     }
 
     start(text, personalityId, prompt) {
