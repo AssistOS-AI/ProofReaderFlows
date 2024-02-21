@@ -1,6 +1,26 @@
 export class Proofread {
     static id = "U5JQR4MRtzrP";
     static description = "Suggests an improved version of the text";
+    static parameters=[
+        {
+            name: "text",
+            type: "string",
+            description: "the text to be corrected",
+            optional: false,
+        },
+        {
+            name: "personalityId",
+            type: "string",
+            description: "id of the personality that will perform the proofread",
+            optional: true,
+        },
+        {
+            name: "prompt",
+            type: "string",
+            description: "additional details about the proofread",
+            optional: true,
+        },
+    ]
     constructor() {
 
     }
